@@ -21,7 +21,8 @@
     var record = event.record;
     var choiceVal = record[CHOICE].value;
     //var StatusVal = record[Status].value;
-    console.log('Onload on '+ events + 'Check box :' + choiceVal);
+    //console.log('Onload on '+ events + 'Check box :' + choiceVal);
+      window.alert('Onload on '+ events + 'Check box :' + choiceVal);
 
     // State which checkbox labels will display/hide fields
     if (choiceVal.indexOf('File Link') = 1) {
