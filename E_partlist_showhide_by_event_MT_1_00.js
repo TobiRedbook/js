@@ -14,10 +14,10 @@
   //var Status = 'Status';
   
 
-  var events =['app.record.create.show', 'app.record.edit.show','app.record.detail.show'];
+  var events ='app.record.detail.show';
   //var events = ['app.record.create.change.' + CHOICE, 'app.record.edit.change.' + CHOICE];
 
-  kintone.events.on('app.record.detail.show', function(event) {
+  kintone.events.on(events, function(event) {
     var record = event.record;
     var choiceVal = record[CHOICE].value;
     //var StatusVal = record[Status].value;
